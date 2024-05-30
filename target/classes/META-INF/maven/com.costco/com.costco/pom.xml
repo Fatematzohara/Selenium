@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.costco</groupId>
+	<artifactId>com.costco</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Costco Framework</name>
+	<description>Do the right thing. Since our founding, Costco has operated
+		under the guiding principle of doing the right thing – for our members,
+		our employees, our suppliers, our communities, and the environment. We
+		understand that when we do the right thing, good things happen.</description>
+	<!--
+	https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependencies>
+		<!-- Selenium Java dependency is used to get access of Java based
+		selenium -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.20.0</version>
+		</dependency>
+
+		<!-- testNG is used to test the functionality of the Application -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.2</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<!--maven-compiler plugin is used to compile the maven build -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.13.0</version>
+				<configuration>
+					<source>1.11</source>
+					<target>1.11</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<!--maven-surefire plugin is used to start the building -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+			</plugin>
+		</plugins>
+	</build> 
+
+
+</project>
